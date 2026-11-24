@@ -193,6 +193,6 @@
     const body = `${message}\n\n${name}\n${email}`;
     window.location.href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    note.textContent = "Your email app should open with the message ready to send. If it doesn't, write to " + TO + ".";
+    note.textContent = "Your email app should open with the message ready to send. If it doesn’t, write to " + TO + ".";
   });
 })();
