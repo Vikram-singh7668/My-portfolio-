@@ -653,3 +653,10 @@ a:hover { color: var(--ink-strong); }
 .bring p { color: var(--muted); }
 @media (max-width: 920px) { .about-grid, .bring { grid-template-columns: 1fr; } }
 @media (max-width: 420px) { .facts > div { grid-template-columns: 1fr; gap: 0.1rem; } }
+
+/* ---------- portrait ---------- */
+.about-side { display: grid; gap: 1.4rem; }
+.portrait { margin: 0; aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden; border: 2px solid var(--text); background: var(--surface); box-shadow: 8px 8px 0 var(--ink-soft); }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+@media (max-width: 920px) { .portrait { max-width: 360px; } }
+@media (max-width: 420px) { .portrait { box-shadow: 5px 5px 0 var(--ink-soft); } }
